@@ -1,0 +1,26 @@
+//use this in your my Sql database
+create database bjp;
+
+use bjp;
+
+CREATE TABLE VoterList (
+    id bigint NOT NULL AUTO_INCREMENT,
+    StateName varchar(25),
+    DistrictName varchar(25),
+    Constituency varchar(25),
+    BoothNumber varchar(5),
+    SerialNumber varchar(10),
+    VoterNumber varchar(15),
+    VoterName  varchar(100),
+    VoterGaurdian  varchar(100),
+    VoterAddress varchar(255),
+    VoterAge  varchar(5),
+    VoterGender varchar(10),
+    PRIMARY KEY (id)
+);
+
+show tables;
+
+select * from VoterList;
+
+delete  from VoterList;
